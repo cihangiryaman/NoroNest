@@ -1,0 +1,6 @@
+@NoroNest.API_HostAddress = http://localhost:5283
+
+GET {{NoroNest.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

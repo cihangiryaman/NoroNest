@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.API", "NoroNest.API\NoroNest.API.csproj", "{ACB830BC-3D1C-4852-A48D-934102A3828B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.Application", "NoroNest.Application\NoroNest.Application.csproj", "{EF56262A-1B4C-4E22-8741-34DDCFBF1D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.Domain", "NoroNest.Domain\NoroNest.Domain.csproj", "{89DB2CE1-BC63-43F3-81D7-3E85C5BB3643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.Infrastructure", "NoroNest.Infrastructure\NoroNest.Infrastructure.csproj", "{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACB830BC-3D1C-4852-A48D-934102A3828B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB830BC-3D1C-4852-A48D-934102A3828B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB830BC-3D1C-4852-A48D-934102A3828B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB830BC-3D1C-4852-A48D-934102A3828B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF56262A-1B4C-4E22-8741-34DDCFBF1D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF56262A-1B4C-4E22-8741-34DDCFBF1D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF56262A-1B4C-4E22-8741-34DDCFBF1D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF56262A-1B4C-4E22-8741-34DDCFBF1D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DB2CE1-BC63-43F3-81D7-3E85C5BB3643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DB2CE1-BC63-43F3-81D7-3E85C5BB3643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DB2CE1-BC63-43F3-81D7-3E85C5BB3643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DB2CE1-BC63-43F3-81D7-3E85C5BB3643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4E54F85-623A-4492-81C3-C5324B516712}
+	EndGlobalSection
+EndGlobal
