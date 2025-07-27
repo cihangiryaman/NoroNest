@@ -14,17 +14,20 @@ namespace NoroNest.API.Controllers
 		}
 
 		[HttpGet]
-		public ScoreDTO GetAllScoresByPatientId()
+		public List<ScoreDTO> GetAllScoresByPatientId()
 		{
-			return new ScoreDTO
+			return new List<ScoreDTO>
 			{
-				Id = 1,
-				GameId = 1,
-				PatientId = 1,
-				Value = 100,
-				Date = DateTime.UtcNow,
-				Attempts = 3,
-				CompletionTime = 3.5
+				new ScoreDTO
+				{
+					Id = 1,
+					GameId = 1,
+					PatientId = 1,
+					Value = 100,
+					Date = DateTime.UtcNow,
+					Attempts = 3,
+					CompletionTime = 3.5
+				}
 			};
 		}
 	}

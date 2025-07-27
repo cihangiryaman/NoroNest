@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.Domain", "NoroNest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.Infrastructure", "NoroNest.Infrastructure\NoroNest.Infrastructure.csproj", "{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoroNest.Game", "NoroNest.Game\NoroNest.Game.csproj", "{6D437CD0-3A3E-437C-B45E-B2BD1B59AF96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA8E59A1-CC3B-4ACF-8463-5F51FB290491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D437CD0-3A3E-437C-B45E-B2BD1B59AF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D437CD0-3A3E-437C-B45E-B2BD1B59AF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D437CD0-3A3E-437C-B45E-B2BD1B59AF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D437CD0-3A3E-437C-B45E-B2BD1B59AF96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
