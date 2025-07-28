@@ -15,4 +15,8 @@
     <ProjectReference Include="..\NoroNest.Infrastructure\NoroNest.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
 </Project>

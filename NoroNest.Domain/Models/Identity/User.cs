@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
+using NoroNest.Domain.Models.Game;
+using NoroNest.Domain.Models.UserData;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

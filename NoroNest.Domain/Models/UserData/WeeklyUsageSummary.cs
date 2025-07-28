@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NoroNest.Domain.Models
+namespace NoroNest.Domain.Models.UserData
 {
 	/// <summary>
 	/// Haftalık kullanım özetleri
