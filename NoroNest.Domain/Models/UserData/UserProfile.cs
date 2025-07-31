@@ -24,26 +24,24 @@ namespace NoroNest.Domain.Models.UserData
 		[ForeignKey("UserId")]
 		public virtual User User { get; set; }
 
-		// Alzheimer seviyesi ve durumu
 		[MaxLength(50)]
 		public string AlzheimerStage { get; set; } // Early, Moderate, Severe
 
 		public DateTime? DiagnosisDate { get; set; }
 
-		// Kişiselleştirme parametreleri
 		public int DifficultyLevel { get; set; } = 1; // 1-10 arası
 		public int PreferredSessionDuration { get; set; } = 15; // dakika
 
 		[MaxLength(500)]
 		public string PreferredGameTypes { get; set; } // JSON array olarak
 
-		[MaxLength(500)]
+		[MaxLength(1000)]
 		public string CognitiveStrengths { get; set; } // JSON array
 
-		[MaxLength(500)]
+		[MaxLength(1000)]
 		public string CognitiveWeaknesses { get; set; } // JSON array
 
-		public decimal EngagementScore { get; set; } = 0;
+		public decimal EngagementScore { get; set; } = 0; // 0-100
 
 		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 		public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

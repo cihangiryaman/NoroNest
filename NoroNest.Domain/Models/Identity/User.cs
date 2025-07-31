@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using Microsoft.AspNetCore.Identity;
 using NoroNest.Domain.Models.Game;
 using NoroNest.Domain.Models.UserData;
 using System;
@@ -39,6 +39,5 @@ namespace NoroNest.Domain.Models.Identity
 		public virtual ICollection<GameSession> GameSessions { get; set; }
 		public virtual ICollection<ProgressReport> ProgressReports { get; set; }
 		public virtual ICollection<UserMetric> UserMetrics { get; set; }
-		public virtual ICollection<AIRecommendation> AIRecommendations { get; set; }
 	}
 }

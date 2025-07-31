@@ -38,7 +38,7 @@ namespace NoroNest.Domain.Models.UserData
 		public DateTime AssessedAt { get; set; } = DateTime.UtcNow;
 		public DateTime? InterventionDate { get; set; }
 
-		[MaxLength(500)]
+		[MaxLength(1000)]
 		public string RecommendedActions { get; set; } // JSON array
 	}
 }
