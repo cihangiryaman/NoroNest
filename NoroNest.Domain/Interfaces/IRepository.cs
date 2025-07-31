@@ -16,7 +16,7 @@ namespace NoroNest.Domain.Interfaces
 		void DeleteRange(List<TEntity> entityies);
 		void Update(TEntity entity);
 		Task<List<TEntity>> GetAll();
-		Task<TEntity> GetById(Expression<Func<TEntity, bool>> filter);
+		Task<TEntity> GetById(int id);
 		Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> filter);
 
 		IQueryable<TEntity> GetAllAsQueryable();
