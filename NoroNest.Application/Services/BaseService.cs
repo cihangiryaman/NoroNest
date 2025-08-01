@@ -27,20 +27,6 @@ where TDTO : class
 			_mapper = mapper;
 			_keyPropertyName = keyPropertyName;
 		}
-		/* public class BaseService<TEntity, TDTO> : IBaseService<TDTO>
-		 where TEntity : class
-		 where TDTO : class
-	 {
-		 protected readonly IUnitOfWork _unitOfWork;
-		 protected readonly IMapper _mapper;
-		 protected readonly IRepository<TEntity> _repository;
-
-		 public BaseService(IUnitOfWork unitOfWork, IMapper mapper)
-		 {
-			 _unitOfWork = unitOfWork;
-			 _mapper = mapper;
-			 _repository = _unitOfWork.GetRepository<TEntity>();
-		 }*/
 
 		public virtual async Task Add(TDTO entity)
 		{
@@ -88,7 +74,7 @@ where TDTO : class
 
 		public virtual async Task<TDTO> GetById(int id)
 		{
-			var entity = await _repository.GetById(e => EF.Property<int>(e, _keyPropertyName) == id);
+			var entity = await _repository.GetById(id);
 			return _mapper.Map<TDTO>(entity);
 		}
 	}
