@@ -25,6 +25,10 @@ namespace NoroNest.Infrastructure.Contexts
 
 		public DbSet<UserProfile> UserProfiles { get; set; }
 
+		public NoroNestDbContext(DbContextOptions<NoroNestDbContext> options)
+			: base(options)
+		{ }
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
