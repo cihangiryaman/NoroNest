@@ -29,14 +29,13 @@ namespace NoroNest.Infrastructure.UnitOfWorks
 			return (IRepository<T>)_genericRepositories[type];
 		}
 
-		public IPatientRepository Patient { get; } // örnek olarak ekledim, diğerleri de eklenecek
-
-
-
+		//public IPatientRepository Patient { get; } // örnek olarak ekledim, diğerleri de eklenecek
 		private readonly NoroNestDbContext _context;
-		public UnitOfWork(NoroNestDbContext context, IPatientRepository patientRepository)
+
+		public UnitOfWork(NoroNestDbContext context)//, IPatientRepository patientRepository)
 		{
-			this.Patient = patientRepository;//örnek olarak ekledim, diğerleri de eklenecek
+			//this.Patient = patientRepository;//örnek olarak ekledim, diğerleri de eklenecek
+			_context = context;
 		}
 
 		public async Task<int> SaveChangesAsync()

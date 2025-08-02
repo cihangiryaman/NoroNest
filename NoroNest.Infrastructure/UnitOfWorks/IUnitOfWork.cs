@@ -9,7 +9,7 @@ namespace NoroNest.Infrastructure.UnitOfWorks
 {
 	public interface IUnitOfWork
 	{
-		IPatientRepository Patient { get; }//aşağıya diğerleri de eklenecek
+		//IChurnRiskAssessmentRepository ChurnRiskAssessment { get; }
 
 		Task<List<T>> QueryAsync<T>(string sql, object parameters = null) where T : class;
 
