@@ -27,7 +27,7 @@ namespace NoroNest.Application
 {
 	public static class DependencyContainer
 	{
-		public static IServiceCollection RegisterCadap(this IServiceCollection services, IConfiguration configuration)
+		public static IServiceCollection RegisterNoroNest(this IServiceCollection services, IConfiguration configuration)
 		{
 			/*services.Configure<FormOptions>(options =>
             {
@@ -56,7 +56,7 @@ namespace NoroNest.Application
 		{
 			services.AddDbContext<NoroNestDbContext>((provider, options) =>
 			{
-				var connStr = configuration.GetConnectionString("Default");
+				var connStr = configuration.GetConnectionString("DevelopmentConnection");
 
 				options.UseSqlServer(connStr, sqlOptions =>
 				{
