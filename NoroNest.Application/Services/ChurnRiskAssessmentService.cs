@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NoroNest.Application.DTOs;
+using NoroNest.Application.Interfaces;
 using NoroNest.Domain.Models.UserData;
 using NoroNest.Infrastructure.UnitOfWorks;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NoroNest.Application.Services
 {
-	public class ChurnRiskAssessmentService : BaseService<ChurnRiskAssessment, ChurnRiskAssessmentDTO>
+	public class ChurnRiskAssessmentService : BaseService<ChurnRiskAssessment, ChurnRiskAssessmentDTO>, IChurnRiskAssessmentService
 	{
 		public ChurnRiskAssessmentService(IUnitOfWork unitOfWork, IMapper mapper, string keyPropertyName = "Id")
 			: base(unitOfWork, mapper, keyPropertyName)

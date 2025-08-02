@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NoroNest.Application.DTOs;
+using NoroNest.Application.Interfaces;
 using NoroNest.Domain.Models.Identity;
 using NoroNest.Domain.Models.UserData;
 using NoroNest.Infrastructure.UnitOfWorks;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NoroNest.Application.Services
 {
-	public class UserMetricService : BaseService<UserMetric, UserMetricDTO>
+	public class UserMetricService : BaseService<UserMetric, UserMetricDTO>, IUserMetricService
 	{
 		public UserMetricService(IUnitOfWork unitOfWork, IMapper mapper, string keyPropertyName = "Id") : base(unitOfWork, mapper, keyPropertyName)
 		{

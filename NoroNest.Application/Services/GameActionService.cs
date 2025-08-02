@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NoroNest.Application.DTOs;
+using NoroNest.Application.Interfaces;
 using NoroNest.Domain.Models.Game;
 using NoroNest.Domain.Models.Identity;
 using NoroNest.Infrastructure.UnitOfWorks;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NoroNest.Application.Services
 {
-	public class GameActionService : BaseService<GameAction, GameActionDTO>
+	public class GameActionService : BaseService<GameAction, GameActionDTO>, IGameActionService
 	{
 		public GameActionService(IUnitOfWork unitOfWork, IMapper mapper, string keyPropertyName = "Id") : base(unitOfWork, mapper, keyPropertyName)
 		{

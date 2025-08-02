@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NoroNest.Application.Interfaces
 {
-	public interface IChurnRiskAssessment : IBaseService<ChurnRiskAssessmentDTO>
+	public interface IChurnRiskAssessmentService : IBaseService<ChurnRiskAssessmentDTO>
 	{
 	}
 }

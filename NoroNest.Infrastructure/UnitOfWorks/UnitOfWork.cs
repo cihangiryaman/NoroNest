@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NoroNest.Infrastructure.UnitOfWorks
 {
-	public class UnitOfWork
+	public class UnitOfWork : IUnitOfWork
 	{
 		private readonly Dictionary<Type, object> _genericRepositories = new();
 
