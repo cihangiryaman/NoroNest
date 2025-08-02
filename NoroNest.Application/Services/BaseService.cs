@@ -18,14 +18,12 @@ where TDTO : class
 		protected readonly IRepository<TEntity> _repository;
 		protected readonly IUnitOfWork _unitOfWork;
 		protected readonly IMapper _mapper;
-		private readonly string _keyPropertyName;
 
 		public BaseService(IUnitOfWork unitOfWork, IMapper mapper, string keyPropertyName = "Id")
 		{
 			_repository = unitOfWork.GetRepository<TEntity>();
 			_unitOfWork = unitOfWork;
 			_mapper = mapper;
-			_keyPropertyName = keyPropertyName;
 		}
 
 		public virtual async Task Add(TDTO entity)
